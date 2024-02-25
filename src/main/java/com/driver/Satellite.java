@@ -1,26 +1,24 @@
 package com.driver;
 
 public class Satellite {
-	  private String id;
-	    private double distanceFromEarth;
+	private String id;
+	private double distanceFromEarth;
 
-	    public Satellite(String id, double distanceFromEarth) {
-	        // your code goes here
-	    }
+	public Satellite(String id, double distanceFromEarth) {
+		this.id = id;
+		this.distanceFromEarth = distanceFromEarth;
+	}
 
-	    public String getId() {
-	    	// your code goes here
-	        return id;
-	    }
+	public String getId() {
+		return id;
+	}
 
-	    public double getDistanceFromEarth() {
-	    	// your code goes here
-	        return distanceFromEarth;
-	    }
+	public double getDistanceFromEarth() {
+		return distanceFromEarth;
+	}
 
-	    @Override
-	    public String toString() {
-	    	// your code goes here
-	        return "Satellite [ID=" + id + ", DistanceFromEarth=" + distanceFromEarth + " km]";
-	    }
+	@Override
+	public String toString() {
+		return "Satellite [ID=" + id + ", DistanceFromEarth=" + distanceFromEarth + " km]";
+	}
 }
